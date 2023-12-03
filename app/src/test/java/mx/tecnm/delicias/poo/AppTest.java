@@ -3,12 +3,14 @@
  */
 package mx.tecnm.delicias.poo;
 
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Test;
+
 class AppTest {
-    @Test void appHasAGreeting() {
-        App sut = new App();
-        assertEquals("Hello World!", sut.getGreeting(), "The greeting should be Hello World!");
-    }
+  @Test
+  void appHasAGreeting() {
+    App sut = new App();
+    assertEquals("Hello World!", sut.getGreeting(), "The greeting should be Hello World!");
+  }
 }
