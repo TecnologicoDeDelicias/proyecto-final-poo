@@ -10,6 +10,8 @@ plugins {
     id 'application'
 
     id 'com.diffplug.spotless' version 'latest.release'
+
+    id 'checkstyle'
 }
 
 repositories {
@@ -48,4 +50,9 @@ spotless {
     java {
         googleJavaFormat()
     }
+}
+
+checkstyle {
+    toolVersion = 'latest.release'
+    configFile = file('config/checkstyle/google-style.xml')
 }
