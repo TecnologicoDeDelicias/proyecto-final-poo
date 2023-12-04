@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 class AppTest {
   @Test
-  void getGreetingShouldReturnHelloWorld() {
+  void testGetGreetingShouldReturnHelloWorld() {
     App sut = new App();
     assertEquals("Hello World!", sut.getGreeting(), "The greeting should be Hello World!");
   }

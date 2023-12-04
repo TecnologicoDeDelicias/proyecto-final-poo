@@ -5,12 +5,20 @@ package mx.tecnm.delicias.poo;
  *
  * @author Benjamin Cisneros Barraza
  */
+@SuppressWarnings("PMD.ShortClassName")
 public class App {
+  /** Returns a greeting. */
   public String getGreeting() {
     return "Hello World!";
   }
 
-  public static void main(String[] args) {
+  /**
+   * The main method.
+   *
+   * @param args the app arguments.
+   */
+  @SuppressWarnings("PMD.SystemPrintln")
+  public static void main(final String[] args) {
     System.out.println(new App().getGreeting());
   }
 }
