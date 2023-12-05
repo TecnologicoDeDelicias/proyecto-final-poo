@@ -15,7 +15,7 @@
             <property name="methodWithOverrideCommentRequirement" value="Ignored" />
             <property name="accessorCommentRequirement" value="Ignored" />
             <property name="classCommentRequirement" value="Required" />
-            <property name="fieldCommentRequirement" value="Required" />
+            <property name="fieldCommentRequirement" value="Ignored" />
             <property name="publicMethodCommentRequirement" value="Required" />
             <property name="protectedMethodCommentRequirement" value="Required" />
             <property name="enumCommentRequirement" value="Required" />

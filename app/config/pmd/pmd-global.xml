@@ -12,6 +12,12 @@
         <exclude name="LocalVariableCouldBeFinal" />
     </rule>
 
+    <rule ref="category/java/codestyle.xml/ShortClassName">
+        <properties>
+            <property name="minimum" value="4" />
+        </properties>
+    </rule>
+
     <rule ref="category/java/design.xml">
         <exclude name="LoosePackageCoupling" />
     </rule>
