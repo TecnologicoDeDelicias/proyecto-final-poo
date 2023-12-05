@@ -52,7 +52,7 @@ public class Book {
   }
 
   public double getPrice() {
-    return this.getPrice(0);
+    return this.price;
   }
 
   /**
