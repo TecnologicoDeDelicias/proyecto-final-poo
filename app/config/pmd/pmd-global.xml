@@ -20,6 +20,7 @@
 
     <rule ref="category/java/design.xml">
         <exclude name="LoosePackageCoupling" />
+        <exclude name="LawOfDemeter" />
     </rule>
 
     <rule ref="category/java/documentation.xml">
