@@ -78,7 +78,6 @@ public class Book {
   }
 
   /** Prints the book information. */
-  @SuppressWarnings("PMD.SystemPrintln")
   @Generated
   public void print() {
     System.out.println(this);

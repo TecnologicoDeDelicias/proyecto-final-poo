@@ -12,7 +12,6 @@ public class Person {
   int age;
   boolean alive;
 
-  @SuppressWarnings("PMD.SystemPrintln")
   void sayHello() {
     System.out.println("Hello, my name is " + name);
   }

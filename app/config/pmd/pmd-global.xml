@@ -5,6 +5,7 @@
     <description>PMD Global Rules</description>
     
     <rule ref="category/java/bestpractices.xml">
+        <exclude name="SystemPrintln" />
     </rule>
 
     <rule ref="category/java/codestyle.xml">

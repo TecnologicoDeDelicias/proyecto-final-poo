@@ -18,7 +18,6 @@ public class Exam {
     new Exam().doExam();
   }
 
-  @SuppressWarnings("PMD.SystemPrintln")
   private void doExam() {
     printBookCount();
     final var quijoteBook = new Book("Don Quijote de la Mancha", "Miguel Cervantes", 3000);
@@ -38,7 +37,6 @@ public class Exam {
     System.out.println("Price with 15% discount: " + harryPotterBook.getPrice(15));
   }
 
-  @SuppressWarnings("PMD.SystemPrintln")
   private void printBookCount() {
     System.out.println("Book count: " + Book.getBookCount());
   }
