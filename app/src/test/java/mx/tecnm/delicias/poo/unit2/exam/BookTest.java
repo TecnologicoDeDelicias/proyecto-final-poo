@@ -31,6 +31,15 @@ class BookTest {
   }
 
   @Test
+  void shouldGetPriceWithDiscountMaxDiscountAllowed() {
+    var book = createAnyBook();
+    var price = 1000.0d;
+    book.setPrice(price);
+
+    assertEquals(850d, book.getPrice(20), "Should calculate price with discount");
+  }
+
+  @Test
   @SuppressWarnings("PMD.JUnitTestContainsTooManyAsserts")
   void canCountNumberOfBooksCreated() {
     assertEquals(0, Book.getBookCount(), "Book count should be 0");

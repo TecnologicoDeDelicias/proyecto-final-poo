@@ -16,6 +16,8 @@ plugins {
     id 'pmd'
 
     id 'jacoco'
+
+    id 'info.solidsoft.pitest' version 'latest.release'
 }
 
 repositories {
@@ -92,4 +94,18 @@ jacocoTestCoverageVerification {
             }
         }
     }
+}
+
+pitest {
+    targetClasses = ['mx.tecnm.delicias.poo.*']
+    excludedClasses = ['mx.tecnm.delicias.poo.App']
+    pitestVersion = 'latest.release'
+    threads = 4
+    outputFormats = ['XML', 'HTML']
+    timestampedReports = false
+    junit5PluginVersion = '1.0.0'
+    mutationThreshold = 90
+    verbose = false
+    withHistory = true
+    mutators = ['ALL']
 }
