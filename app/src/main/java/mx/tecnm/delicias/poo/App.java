@@ -18,6 +18,7 @@ public class App {
    * @param args the app arguments.
    */
   @SuppressWarnings("PMD.SystemPrintln")
+  @Generated
   public static void main(final String[] args) {
     System.out.println(new App().getGreeting());
   }

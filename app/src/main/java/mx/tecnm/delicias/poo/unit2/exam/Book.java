@@ -1,5 +1,7 @@
 package mx.tecnm.delicias.poo.unit2.exam;
 
+import mx.tecnm.delicias.poo.Generated;
+
 /**
  * Book class.
  *
@@ -77,7 +79,13 @@ public class Book {
 
   /** Prints the book information. */
   @SuppressWarnings("PMD.SystemPrintln")
+  @Generated
   public void print() {
     System.out.println(this);
+  }
+
+  /** Resets the book counter. */
+  public static void resetBookCounter() {
+    bookCount = 0;
   }
 }

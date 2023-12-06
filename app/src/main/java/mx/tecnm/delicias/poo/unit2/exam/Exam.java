@@ -1,10 +1,13 @@
 package mx.tecnm.delicias.poo.unit2.exam;
 
+import mx.tecnm.delicias.poo.Generated;
+
 /**
  * Unit 2 Exam class.
  *
  * @author Benjamin Cisneros Barraza.
  */
+@Generated
 public class Exam {
   /**
    * Main method to test Exam.
@@ -17,6 +20,7 @@ public class Exam {
 
   @SuppressWarnings("PMD.SystemPrintln")
   private void doExam() {
+    printBookCount();
     final var quijoteBook = new Book("Don Quijote de la Mancha", "Miguel Cervantes", 3000);
     quijoteBook.print();
     printBookCount();

@@ -14,6 +14,8 @@ plugins {
     id 'checkstyle'
 
     id 'pmd'
+
+    id 'jacoco'
 }
 
 repositories {
@@ -46,6 +48,8 @@ application {
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+
+    finalizedBy jacocoTestReport
 }
 
 spotless {
@@ -68,4 +72,24 @@ pmd {
 
 pmdMain {
     ruleSetFiles = files("config/pmd/pmd-global.xml", "config/pmd/pmd-main.xml")
+}
+
+jacocoTestReport {
+    dependsOn test
+    finalizedBy jacocoTestCoverageVerification
+}
+
+jacoco {
+    toolVersion = "latest.release"
+}
+
+jacocoTestCoverageVerification {
+    dependsOn jacocoTestReport
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.9
+            }
+        }
+    }
 }
