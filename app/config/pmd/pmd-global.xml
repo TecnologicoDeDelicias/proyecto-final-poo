@@ -10,6 +10,7 @@
     <rule ref="category/java/codestyle.xml">
         <exclude name="AtLeastOneConstructor" />
         <exclude name="LocalVariableCouldBeFinal" />
+        <exclude name="CommentDefaultAccessModifier" />
     </rule>
 
     <rule ref="category/java/codestyle.xml/ShortClassName">
@@ -25,6 +26,13 @@
 
     <rule ref="category/java/documentation.xml">
         <exclude name="CommentRequired" />
+    </rule>
+
+    <rule ref="category/java/documentation.xml/CommentSize">
+        <properties>
+            <property name="maxLines" value="6" />
+            <property name="maxLineLength" value="100" />
+        </properties>
     </rule>
 
     <rule ref="category/java/errorprone.xml">
