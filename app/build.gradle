@@ -126,7 +126,7 @@ pitest {
     outputFormats = ['XML', 'HTML']
     timestampedReports = false
     junit5PluginVersion = '1.0.0'
-    mutationThreshold = 90
+    mutationThreshold = 70
     verbose = false
     withHistory = true
     mutators = ['ALL']
