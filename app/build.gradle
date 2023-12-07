@@ -61,7 +61,7 @@ spotless {
 }
 
 checkstyle {
-    toolVersion = 'latest.release'
+    toolVersion = '10.12.5' // started failing using 10.12.6
     configFile = file('config/checkstyle/google-style.xml')
 }
 
