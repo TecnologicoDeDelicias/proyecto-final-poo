@@ -24,13 +24,6 @@ public class Exercise3 {
   }
 
   private void printOlder(final Person firstPerson, final Person secondPerson) {
-    if (firstPerson.isOlderThan(secondPerson)) {
-      System.out.println(firstPerson.getName() + " is older than " + secondPerson.getName());
-    } else if (secondPerson.isOlderThan(firstPerson)) {
-      System.out.println(firstPerson.getName() + " is younger than " + secondPerson.getName());
-    } else {
-      System.out.println(
-          firstPerson.getName() + " and " + secondPerson.getName() + " have the same age");
-    }
+    System.out.println(firstPerson.compareAge(secondPerson));
   }
 }

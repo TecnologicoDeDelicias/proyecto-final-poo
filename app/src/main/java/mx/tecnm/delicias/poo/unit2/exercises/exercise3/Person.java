@@ -1,7 +1,5 @@
 package mx.tecnm.delicias.poo.unit2.exercises.exercise3;
 
-import mx.tecnm.delicias.poo.Generated;
-
 /**
  * Person class with private attributes.
  *
@@ -22,14 +20,19 @@ class Person {
     this.age = age;
   }
 
-  @Generated
-  String getName() {
-    return name;
-  }
-
   boolean isOlderThan(final Person otherPerson) {
     // The keyword "this" is used to reference the current instance
     // It is not required at least there is ambiguity between any other parameter or variable
     return this.age > otherPerson.age;
+  }
+
+  String compareAge(final Person otherPerson) {
+    if (this.isOlderThan(otherPerson)) {
+      return this.name + " is older than " + otherPerson.name;
+    }
+    if (otherPerson.isOlderThan(this)) {
+      return this.name + " is younger than " + otherPerson.name;
+    }
+    return this.name + " and " + otherPerson.name + " have the same age";
   }
 }

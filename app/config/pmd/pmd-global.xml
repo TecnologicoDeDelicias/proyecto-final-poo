@@ -13,6 +13,7 @@
         <exclude name="AtLeastOneConstructor" />
         <exclude name="LocalVariableCouldBeFinal" />
         <exclude name="CommentDefaultAccessModifier" />
+        <exclude name="OnlyOneReturn" />
     </rule>
 
     <rule ref="category/java/codestyle.xml/ShortClassName">
