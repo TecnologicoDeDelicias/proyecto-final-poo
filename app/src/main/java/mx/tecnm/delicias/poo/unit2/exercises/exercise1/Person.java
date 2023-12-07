@@ -12,8 +12,8 @@ class Person {
   int age;
   boolean alive;
 
-  void sayHello() {
-    System.out.println("Hello, my name is " + name);
+  String sayHello() {
+    return "Hello, my name is " + name;
   }
 
   void incrementAge() {

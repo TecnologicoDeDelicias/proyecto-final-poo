@@ -16,17 +16,21 @@ class Person {
    * @param name The person's name.
    * @param age the person's initial age.
    */
-  public Person(final String name, final int age) {
+  Person(final String name, final int age) {
     this.name = name;
     this.age = age;
   }
 
-  void sayHello() {
-    if (alive) {
-      System.out.println("Hello, my name is " + name);
-    } else {
-      System.out.println("RIP " + name);
-    }
+  boolean isAlive() {
+    return alive;
+  }
+
+  int getAge() {
+    return age;
+  }
+
+  String sayHello() {
+    return isAlive() ? "Hello, my name is " + name : "RIP " + name;
   }
 
   void incrementAge() {
@@ -34,7 +38,7 @@ class Person {
   }
 
   void die() {
-    if (alive) {
+    if (isAlive()) {
       alive = false;
     }
   }

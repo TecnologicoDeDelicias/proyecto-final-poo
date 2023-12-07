@@ -16,8 +16,8 @@ public class Exercise2 {
   private void doExercise() {
     final Person john = new Person("John", 30);
 
-    john.sayHello();
+    System.out.println(john.sayHello());
     john.die();
-    john.sayHello();
+    System.out.println(john.sayHello());
   }
 }

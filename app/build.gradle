@@ -79,6 +79,16 @@ pmdMain {
 jacocoTestReport {
     dependsOn test
     finalizedBy jacocoTestCoverageVerification
+    reports {
+		xml.required = true
+	}
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: [
+				'**/Exercise*', 
+			])
+        }))
+    }
 }
 
 jacoco {
@@ -89,8 +99,11 @@ jacocoTestCoverageVerification {
     dependsOn jacocoTestReport
     violationRules {
         rule {
+            element = 'CLASS'
+            excludes = ['mx.tecnm.delicias.*.exercises.exercise*.Exercise*']
             limit {
-                minimum = 0.1
+                counter = 'LINE'
+                minimum = 0.8
             }
         }
     }
@@ -98,7 +111,7 @@ jacocoTestCoverageVerification {
 
 pitest {
     targetClasses = ['mx.tecnm.delicias.poo.*']
-    excludedClasses = ['mx.tecnm.delicias.poo.App']
+    excludedClasses = ['mx.tecnm.delicias.poo.App', 'mx.tecnm.delicias.*.exercises.exercise*.Exercise*']
     pitestVersion = 'latest.release'
     threads = 4
     outputFormats = ['XML', 'HTML']
