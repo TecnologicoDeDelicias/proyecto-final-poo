@@ -7,7 +7,7 @@ package mx.tecnm.delicias.poo.unit2.exercises.exercise1;
  *
  * @author Benjamin Cisneros Barraza
  */
-public class Person {
+class Person {
   String name;
   int age;
   boolean alive;
