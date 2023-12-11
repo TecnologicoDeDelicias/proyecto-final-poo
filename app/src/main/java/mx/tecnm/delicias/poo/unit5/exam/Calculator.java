@@ -3,7 +3,7 @@ package mx.tecnm.delicias.poo.unit5.exam;
 public class Calculator {
 
   public int unsafeDivision(int i, int j) {
-    return 0;
+    return i/j;
   }
 
   public int safeDivision(int i, int j) {
