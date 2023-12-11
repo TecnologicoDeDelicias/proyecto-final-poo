@@ -7,14 +7,14 @@ public class Calculator {
   }
 
   public int safeDivision(int i, int j) {
-    return 0;
+    return i/j;
   }
 
   public int uncheckedDivision(int i, int j) {
-    return 0;
+    return i/j;
   }
 
   public int checkedDivision(int i, int j) {
-    return 0;
+    return i/j;
   }
 }
