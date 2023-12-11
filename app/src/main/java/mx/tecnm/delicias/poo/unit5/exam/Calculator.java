@@ -15,6 +15,6 @@ public class Calculator {
   }
 
   public int checkedDivision(int i, int j) {
-    return i/j;
-  }
+    return i/j;
+  }
 }
