@@ -2,13 +2,17 @@ package mx.tecnm.delicias.poo.unit3.exam;
 
 public class Animal {
 
-  public Animal(String string) {}
+  private String name;
+
+  public Animal(String name) {
+    this.name = name;
+  }
 
   public String getSpecie() {
     return "Unknown";
   }
 
   public String greeting() {
-    return "Hello, my name is Boris the Animal and I am of Unknown specie.";
+    return "Hello, my name is " + name + " and I am of " + getSpecie() + " specie.";
   }
 }

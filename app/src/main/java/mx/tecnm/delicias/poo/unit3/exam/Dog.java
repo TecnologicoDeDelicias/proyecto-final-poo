@@ -4,16 +4,16 @@ public class Dog extends Animal {
 
   private String fav;
 
-public Dog(String name, String fav) {
-    super (name);
-    this.fav= fav;
+  public Dog(String name, String fav) {
+    super(name);
+    this.fav = fav;
   }
 
   public String getSpecie() {
-    return null;
+    return "Canine";
   }
 
   public String greeting() {
-    return null;
+    return super.greeting() + " My favorite food is " + fav;
   }
 }
