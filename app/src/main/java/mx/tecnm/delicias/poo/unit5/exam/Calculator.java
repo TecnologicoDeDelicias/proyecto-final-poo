@@ -1,12 +1,12 @@
 package mx.tecnm.delicias.poo.unit5.exam;
 
-public class Calculator {
+class Calculator {
 
-  public int unsafeDivision(int first, int second) {
+  int unsafeDivision(int first, int second) {
     return first / second;
   }
 
-  public int safeDivision(int first, int second) {
+  int safeDivision(int first, int second) {
     try {
       return unsafeDivision(first, second);
     } catch (ArithmeticException ae) {
@@ -14,7 +14,7 @@ public class Calculator {
     }
   }
 
-  public int uncheckedDivision(int first, int second) {
+  int uncheckedDivision(int first, int second) {
     try {
       return unsafeDivision(first, second);
     } catch (ArithmeticException ae) {
@@ -22,7 +22,7 @@ public class Calculator {
     }
   }
 
-  public int checkedDivision(int first, int second) throws DivisionByZero {
+  int checkedDivision(int first, int second) throws DivisionByZero {
     try {
       return unsafeDivision(first, second);
     } catch (ArithmeticException ae) {
