@@ -9,7 +9,7 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
 
-    // id 'com.diffplug.spotless' version 'latest.release'
+    id 'com.diffplug.spotless' version 'latest.release'
 
     id 'checkstyle'
 
@@ -53,13 +53,13 @@ tasks.named('test') {
 
     finalizedBy jacocoTestReport
 }
-/*
+
 spotless {
     java {
         googleJavaFormat()
     }
 }
-*/
+
 checkstyle {
     toolVersion = '10.12.5' // started failing using 10.12.6
     configFile = file('config/checkstyle/google-style.xml')
