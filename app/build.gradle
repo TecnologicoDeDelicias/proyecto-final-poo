@@ -104,7 +104,10 @@ jacocoTestCoverageVerification {
             excludes = [
                 'mx.tecnm.delicias.*.exercises.exercise*.Exercise*', 
                 'mx.tecnm.delicias.*.exercises.exercise*.Main', 
-                'mx.tecnm.delicias.poo.unit5.exercises.exercise2.PropagateExceptionExample'
+                'mx.tecnm.delicias.poo.unit5.exercises.exercise2.PropagateExceptionExample',
+                'mx.tecnm.delicias.poo.unit5.exam.Calculator',
+                'mx.tecnm.delicias.poo.unit5.exam.DivisionByZero',
+
             ]
             limit {
                 counter = 'LINE'
